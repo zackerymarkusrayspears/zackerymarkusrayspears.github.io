@@ -1,0 +1,47 @@
+body {
+    background: linear-gradient(to right, lightblue,yellow);
+}
+
+#submit, #reset {
+    font-size: 20px;
+    background-color: aquamarine;
+    color: grey;
+    padding: 20px;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    margin-bottom: 20px;
+    border-color: yellow; 
+    transition: 2s;
+    transition-timing-function: ease-in;  
+}
+
+#submit:hover, #reset:hover {
+    background-color: yellowgreen;
+    color:gray;
+}
+
+div {
+    font-size: 20px;
+}
+
+input {
+    height: 20px;
+    cursor: pointer;
+}
+
+#results:hover {
+    border: solid 3px black;
+    margin-top: 10px;
+    width: 180px;
+}
+
+.answers {
+    margin-bottom: 20px;
+}
+
+.answers lable {
+    display: block;
+    padding: 10px;
+}
+

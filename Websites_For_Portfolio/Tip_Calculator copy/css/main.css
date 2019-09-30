@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(to right, orange, lightsalmon);
+    font-family: 'Roboto Mono', monospace;
+}
+
+#container {
+    background-color:lightgray;
+    height: 650px;
+    width: 360px;
+    margin: 100px auto; /* Give the element a margin of 100px on the top and bottom automaticallly calulate the left and right margin to center it horizointally */
+    border-radius: 20px; /* Round off the edges of the element*/
+    box-shadow: 5px 10px 15px black; /* Box shadow properties: horizontal offset (required), vertical offset (required), blur(optional), spread (optional), color (optional) */
+}
+
+h1 {
+    background-color: lightsalmon;
+    color:black;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px 100px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+p {
+    padding-left: 20px;
+}
+
+#billAmt, #serviceQual, #numPeople { /* Element with the ID of billAmt, serviceQual, and numPeople will both receive these styles */
+    margin-left: 20px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+#billAmt:focus, #serviceQual:focus, #numPeople:focus {
+    border: 3px solid lightsalmon;
+    outline: none;
+}
+
+button {
+    display: block;
+    border-radius: 20px;
+    margin:40px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 200px;
+    height: 60px;
+    font-size: 20pt;
+    background-color:lightsalmon;
+}
+
+button:hover {
+    background-color: orange
+}
+
+button:focus {
+    outline: none;
+}
+
+#tipAmount, #price, #perPrice {
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bold;
+}
+

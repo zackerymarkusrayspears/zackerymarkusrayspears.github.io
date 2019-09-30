@@ -1,0 +1,100 @@
+body {
+    background-color: aqua;
+    margin: 0;
+}
+
+#leftColum {
+    float:left; 
+    width:500px; 
+    height:800px; 
+    background-color:white; 
+    border:solid red; 
+    margin: 0;
+
+}
+
+.types {
+    text-align: center;
+    font-size: 40pt;
+}
+ul{
+    font-size: 20pt;
+    color: red;
+}
+
+#pokemonGenerator {
+    float:left; 
+    width:422px; 
+    height:500px; 
+    background-color:white;  
+    border:solid red; 
+    position: absolute;
+    height: 600px;
+    left: 506px;
+    margin-top:200px;    
+}
+
+#pokemonGen {
+    position: absolute;
+    bottom: 150px;
+    right: 140px;  
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    position: absolute;
+    bottom: 60px;
+    right:95px;
+    font-size:30px;
+   
+}
+
+#columRight {
+    float:right; 
+    width:500px; 
+    height:800px; 
+    background-color:white; 
+    border:solid red; 
+}
+
+h1 {
+    text-align: center;
+    padding: 5px;
+}
+
+.irc_mi {
+    position: fixed;
+    right: 530px;
+}
+ 
+.buttonDec {
+    position: absolute;
+    top:200px;
+    right: 28%;
+    font-size: 50px;
+    border-radius: 20px;
+    background-color: yellow;
+    
+}
+
+#pokemonGen {
+    height:40px;
+    font-size: 30px;
+    text-align: center;
+    top: 100px;
+    left:70px;
+    border-radius: 20px;   
+}
+
+.buttonDec:focus {
+    outline:none;
+}
+
+.buttonDec:hover {
+    border: solid 2px red;
+}
+
+.numOfPokemon {
+    font-size: 50px;
+}

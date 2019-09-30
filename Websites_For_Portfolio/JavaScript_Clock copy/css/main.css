@@ -1,0 +1,60 @@
+body {
+    background-color:black;
+    margin: 0;
+    font-family: 'Saira Semi Condensed', sans-serif; /*Try to use the  Saira Semi Condensed font, if you can't use sans-serif font */
+}
+
+h1{
+    text-align: center;
+    float: center;
+    border: 3px solid aqua;
+    position: absolute;
+    left: 40%;
+}
+
+h1, a {
+    color: aqua;
+    text-align: center;
+}
+
+#clockDisplay {
+    color: aqua;
+    position: absolute; /* We want to postion this element exactly on the page */
+    top: 40%; /* Move 50% of the height of the parent */
+    left: 50%; /* Move element right 50% of the width of the parent */
+    transform: translateX(-50%) translateY(-50%); /* Move the element element 50% of its wifth to left and 50% of its height up */
+    font-size: 80pt;
+    text-decoration: underline;
+}
+
+#dayMonth {
+    color: aqua;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translateX(-50) translateY(-50);
+    font-size: 40pt;
+   
+}
+
+footer {
+    bottom: 0;
+    font-size: 20pt;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;  
+}
+
+footer :hover {
+    background-color:cyan;
+    color: black;
+}
+
+
+

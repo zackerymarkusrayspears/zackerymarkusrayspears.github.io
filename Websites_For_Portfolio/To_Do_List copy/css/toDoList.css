@@ -1,0 +1,118 @@
+body {
+    background:linear-gradient(to right,aqua, #CCC9E7) ;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* applies to the main page heading text*/
+
+h1 {
+    color:#136F63;
+    text-transform: uppercase;
+    margin-top: 20px; 
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:brown; 
+}
+
+/* Rules for the three paragraph containing the instruction To-Do list */
+
+p {
+    font-size: 20px;
+}
+
+#instruction1 {
+    color:#3F88C5;
+}
+
+#instruction2 {
+    color: #F038FF;
+}
+
+#instruction3 {
+    color:brown;
+}
+
+/* Styles for the input element used to ass a new To-Do*/
+
+input {
+    min-width: 65%; /* This element's width must be at least 65% of the container  */
+    border-radius: 20px;
+}
+
+/* Styles fof the submit button */
+
+#submit {
+    background-color:#A1FCDF;
+    border: none;
+    border-radius: 20px;
+    /* Allows us to add delay before the animation starts */
+    color:#F038FF;
+    transition-delay: 0s;
+    /* Allows us to control how long the animation takes */
+    transition-duration: 5s;
+    /* Allows us to specify what property will be animated for the transition */
+    transition-property: background-color;
+    /* Allows us to modify the speed of the animation such as starting out slow and then speeding up */
+    transition-timing-function: ease-in;
+
+    transition: background-color 1.5s ease 1s; /* we can use shorthand to specify all of the transition properties in one line - property, duration, timing- function and delay  */
+}
+
+#submit:hover {
+    background-color:white;
+    color:#F038FF;  
+}
+
+#submit:focus, input:focus{
+    border: 3px solid brown;
+    outline:none;
+}
+
+/* Styles for the ul and li */
+
+ul {
+    margin: 20px;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+    border: 3px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color:#F038FF;
+    background-color: #A1FCDF;
+    font-weight: bold;
+
+    transition: all 0.75s ease;
+    /* Webkit, for Safari and Opera */
+    -webkit-transition: all 0.75s ease;
+    /* Mozilla, for Firefox */
+    -moz-transition: all 0.75 ease;
+    /* Opera */
+    -o-transition: all 0.75;
+}
+
+li:hover {
+    background-color: white;
+}
+
+/* Style for when a list item is marked done */
+
+.done {
+    background-color:#CCC9E7 !important;
+    color: brown;
+}
+
+.delete {
+    display: none;
+}
+
+li > button {
+    float:right;
+    border:none;
+    background: none;
+}

@@ -1,0 +1,75 @@
+body {
+    background-color:white;
+    margin: 0px;
+}
+
+/* Targeting a class in CSS - every elment with the class of header will recieve these CSS rules */
+.header {
+    background-color: black;
+    overflow: hidden;
+    
+}
+
+/* These CSS rules will be applied  when hover over an achor element using the header class */
+.header a:hover {
+  background-color: orange;
+}
+
+.headerLink {
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #FFFFFF;
+  /* 
+    Red f * f = 15 * 15 =225
+    Blue f * f = 15 * 15 =225 
+    Green f * f = 15 * 15 =225 
+  */
+  font-size: 20pt;
+}
+
+/* Target an ID in CSS - the elments with ID of homeLink will revieve these CSS rules */
+#homeLink {
+  float: left;
+}
+
+#aboutLink {
+  float: right;
+}
+
+h1 {
+  color: orange;
+}
+
+footer{
+  bottom: 0;
+  font-size: 10pt;
+  height: 35px;
+  position: fixed;
+  width: 100%;
+}
+  
+a {
+  text-decoration: none;
+  Color:white;
+  
+  }
+
+footer {
+  background-color: black;
+}
+
+.bottomLinks {
+  padding: 5px;
+  width: 100%;
+  font-size: 15pt;
+  display: block;
+
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+ 
