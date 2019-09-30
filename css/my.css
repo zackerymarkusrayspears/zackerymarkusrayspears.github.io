@@ -16,7 +16,7 @@
 
  #leftRounded {
     border-bottom-left-radius: 20px;
- }
+ } 
 
 @media only screen and (max-width: 600px) {
     #myPic {
@@ -30,11 +30,10 @@
     height: 70px;
     width: 150px;
     }
-    
  }
 
 #linksPadding {
-    padding: 50px;
+    padding: 10px;
 }
 @media only screen and (min-width: 576px) {
  .rounded-circle {
