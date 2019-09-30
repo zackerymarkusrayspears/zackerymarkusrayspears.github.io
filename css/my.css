@@ -4,7 +4,7 @@
     border-radius: 200px;
     padding: 0;
 }
-
+​
 .rounded-circle  {
     height: 159px;
     width: 300px
@@ -17,7 +17,7 @@
  #leftRounded {
     border-bottom-left-radius: 20px;
  }
-
+​
  @media only screen and (max-width: 600px) {
     #myPic {
     height: 150px;
@@ -31,27 +31,35 @@
         width: 150px;
     }
     
-}
-
+ }
+​
 #linksPadding {
     padding: 50px;
 }
-
-
+​
+​
 @media only screen and (min-width: 576px) {
  .rounded-circle {
     height: 0px;
     width: 0px;
 }
 }
-
-
-
+​
+​
+​
 .rounded-circle {
     height: 70px;
     width: 150px;
 }
-
+​
+@media only screen and (min-width: 768px) {
+    
+    .rounded-circle {
+        height: 90px;
+        width: 150px;
+    }
+}
+​
 @media only screen and (min-width: 786px) {
     
     .rounded-circle {
@@ -59,10 +67,23 @@
         width: 150px;
     }
 }
-
+​
 @media only screen and (min-width: 992px){
     .rounded-circle {
         height: 160px;
         width: 160px;
         }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
