@@ -20,11 +20,12 @@
 
  @media only screen and (max-width: 600px) {
     #myPic {
-        height: 150px;
-        width: 150px;
-        border-radius: 150px;
-        padding: 0;
- }
+    height: 150px;
+    width: 150px;
+    border-radius: 200px;
+    padding: 0;
+    }
+    
     .rounded-circle {
         height: 70px;
         width: 150px;
@@ -37,7 +38,31 @@
 }
 
 
+@media only screen and (min-width: 576px) {
+ .rounded-circle {
+    height: 0px;
+    width: 0px;
+}
+}
 
 
 
+.rounded-circle {
+    height: 70px;
+    width: 150px;
+}
 
+@media only screen and (min-width: 786px) {
+    
+    .rounded-circle {
+        height: 90px;
+        width: 150px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .rounded-circle {
+        height: 160px;
+        width: 160px;
+        }
+}
