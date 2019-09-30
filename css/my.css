@@ -68,12 +68,6 @@
     }
 }
 
-@media only screen and (min-width:1024px) {
-    .rounded-circle {
-        height: 140px;
-        width: 150px;
-    }
-}
 
 
 
