@@ -56,5 +56,33 @@ footer :hover {
     color: black;
 }
 
+@media only screen and (max-width:400px) {
+    
+    body {
+        margin: 0;
+    }
+    
+    h1{
+        font-size: 20pt;
+        position: absolute;
+        left:28px;
 
+    }
+    
+    #clockDisplay {
+        font-size: 25pt;
+    }
+
+    #dayMonth {
+        font-size:20pt;
+    }
+    a {
+        text-align: center;
+    }
+
+    footer :hover {
+        background-color:cyan;
+        color: black;
+    }
+}
 
