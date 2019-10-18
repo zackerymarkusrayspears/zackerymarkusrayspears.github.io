@@ -1,0 +1,40 @@
+body {
+    background:url("https://wi-images.condecdn.net/image/doEYpG6Xd87/crop/2040/f/weather.jpg");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(75,183, 232);
+}
+
+
+
+.weatherCard {
+    margin-top: 40px;
+    border: 2px white solid;
+    box-shadow: 2px 2px 2px  yellow;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+ #remove {
+    border-top-left-radius: 7.5px;
+    opacity: .5;
+ }
+ #remove:hover {
+    opacity: 1.0;
+ }
+
+ .list-group li {
+     border: 2px solid white;
+     background-color: lightgrey;
+ }
+ h1 {
+    text-align: center;
+    margin: 12px 0;
+ }
+
+#bottomProgress {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

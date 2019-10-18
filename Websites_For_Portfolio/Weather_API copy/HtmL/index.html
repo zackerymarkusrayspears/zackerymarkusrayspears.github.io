@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Vane</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+
+    <!--Bootstrap stylesheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--My stylesheet-->
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="../img/WordPress-logotype-wmark-white.png" height="50px" width="50px">
+        <span class="navbar-brand" href="#">Weather Vane</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Links to API Websites-->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://darksky.net/forecast/40.7127,-74.0059/us12/en" target="_blank">Powered-by-Dark-Sky <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://developer.mapquest.com/documentation/geocoding-api/" target="_blank">MapQuest-Geocoding-API</a>
+                </li>
+            </ul>
+            <!-- Search Bar for location-->
+            <form class="form-inline my-2 my-lg-0">
+                <input id="searchBar" class="form-control mr-sm-2" type="search" placeholder="Address/Zip/City">
+                <!--Button-->
+                <button id="submit" class="btn btn-outline-primary my-2 my-sm-0" type="button">Get Weather</button>
+            </form>
+        </div>
+    </nav>
+    <!--End of Nav Bar-->
+
+    <!-- Spinner-->
+    <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <!-- End of Spinners-->
+
+    <!-- WEATHER CARD container -->
+ <div class='container'>
+    <div class='row'>
+    </div>
+  </div>
+    <!-- Weather Card container end-->
+
+  <!-- Weather card template-->
+  <div id='template' style="display: none;">
+    <div class="col-xs-12 col-lg-4">
+      <div class='weatherCard'>
+        <!-- BUTTON TO REMOVE CARD -->
+        <button type='button' id='remove'>X</button>
+        <!-- LOCATION -->
+        <h1>@@city@@</h1>
+        <!-- CURRENT TEMP -->
+        <h1>@@currentTemp@@&#8457</h1>
+        <!-- LIST OF WEATHER INFO -->
+        <ul class='list-group list-group-flush'>
+          <li class='list-group-item'>Location: @@cityState@@</li>
+          <li class='list-group-item'>Current Conditions:@@conditions@@</li>
+          <li class='list-group-item'>High Temp: @@highTemp@@&#8457</li>
+          <li class='list-group-item'>Low Temp: @@lowTemp@@&#8457</li>
+          <li class='list-group-item'>Chance of Precipitation: @@precipitation@@%</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <!-- Weather card template end-->
+
+    <!-- Loading Bar-->
+    <div id="bottomProgress" class="progress">
+         <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+    </div>
+   <!-- End of Loading Bar-->
+    
+            
+    
+
+
+    <!--Jquery, Popper.js, Bootstrap Js-->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--API Keys File-->
+    <script 
+        src="../JS/apiKeys.js"></script>
+    <!-- My javascript-->
+    <script 
+        src="../JS/Java.js"></script>
+    
+</body>
+</html>
