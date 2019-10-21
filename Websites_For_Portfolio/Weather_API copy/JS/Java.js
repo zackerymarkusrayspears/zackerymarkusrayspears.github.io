@@ -111,7 +111,7 @@ function getWeatherInfo(latitude, longitude, city, state) {
 //Function to connect to the Mapquest Geocoding API and get geocoding data
 function geoCode(location) {
     //Base-URL + APIKey + &location= + Address
-    $.ajax("http://www.mapquestapi.com/geocoding/v1/address?key=" + mapQuestKey + "&location=" + location)
+    $.ajax("https://www.mapquestapi.com/geocoding/v1/address?key=" + mapQuestKey + "&location=" + location)
     .done(function(data) {
         
         //Get the lat and lng from the response
