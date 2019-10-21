@@ -64,14 +64,14 @@
   <!-- Weather card template-->
   <div id='template' style="display: none;">
     <div class="col-xs-12 col-lg-4">
-      <div class='weatherCard'>
+      <div class='weatherCard' style="background-image: url('@@imageURL@@');">
         <!-- BUTTON TO REMOVE CARD -->
         <button type='button' id='remove'>X</button>
-        <!-- LOCATION -->
+          <!-- LOCATION -->
         <h1>@@city@@</h1>
         <!-- CURRENT TEMP -->
         <h1>@@currentTemp@@&#8457</h1>
-        <!-- LIST OF WEATHER INFO -->
+        <!-- LIST OF WEATHER INFO -->  
         <ul class='list-group list-group-flush'>
           <li class='list-group-item'>Location: @@cityState@@</li>
           <li class='list-group-item'>Current Conditions:@@conditions@@</li>
@@ -79,11 +79,21 @@
           <li class='list-group-item'>Low Temp: @@lowTemp@@&#8457</li>
           <li class='list-group-item'>Chance of Precipitation: @@precipitation@@%</li>
         </ul>
+        <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="collapse" data-target="#forecast">Hide/Show Weekly Forecast</button>
+        <div id="forecast" class="collapse">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Today || High: @@max0@@&#8457 <br> Low: @@low0@@&#8457 <br> Precip. Chance: @@precip0@@%</li>
+            <li class="list-group-item">@@date1@@ || High: @@max1@@&#8457 <br> Low: @@low1@@&#8457 <br> Precip. Chance: @@precip1@@%</li>
+            <li class="list-group-item">@@date3@@ || High: @@max3@@&#8457 <br> Low: @@low3@@&#8457 <br> precip. Chance: @@precip3@@%</li>
+            <li class="list-group-item">@@date4@@ || High: @@max4@@&#8457 <br> Low: @@low4@@&#8457 <br> Precip. Chance: @@precip4@@%</li>
+          </ul>
+
+        </div>
       </div>
     </div>
   </div>
     <!-- Weather card template end-->
-
+ 
     <!-- Loading Bar-->
     <div id="bottomProgress" class="progress">
          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
