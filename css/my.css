@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+#overlay {
+    text-shadow: black 0px 0px 10px;
+}
+
 .rounded-circle  {
     height: 159px;
     width: 300px;
