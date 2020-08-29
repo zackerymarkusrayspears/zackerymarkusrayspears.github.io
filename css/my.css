@@ -5,6 +5,14 @@
     padding: 0;
 }
 
+#tellMeMore {
+    color: black;
+}
+
+.masthead {
+    padding-bottom: 300px;
+}
+
 #overlay {
     text-shadow: black 0px 0px 10px;
 }
