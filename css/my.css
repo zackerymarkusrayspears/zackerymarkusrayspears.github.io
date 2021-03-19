@@ -17,7 +17,7 @@
     text-shadow: black 0px 0px 10px;
 }
 
-.rounded-circle  {
+/* .rounded-circle  {
     height: 159px;
     width: 300px;
  }
@@ -32,7 +32,15 @@
 
  #leftRounded {
     border-bottom-left-radius: 20px;
- } 
+ }  */
+
+ #omniFoodPhotoSize{
+     height: 190px;
+ }
+
+ #omniFoodBottomSize{
+     padding-bottom: 27px;
+ }
 
  @media only screen and (max-width: 600px) {
     #myPic {
