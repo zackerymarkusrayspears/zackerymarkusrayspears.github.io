@@ -3,10 +3,10 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
-
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
 }
 
 p {
@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  color: #00fff2;
+  color: yellow;
 }
 
 .text-primary {
@@ -98,7 +98,7 @@ img::-moz-selection {
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #00fff2 !important;
+  background-color: yellow !important;
   border-color: #00fff2 !important;
   color: white;
 }
@@ -172,21 +172,24 @@ color: #00fff2;
 
 header.masthead {
   text-align: center;
-  color: white;
-  background-image: url("../img/header-bg.jpg");
+  color: yellow;
+  background-image: url("../img/about/newyork.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 10),rgba(245, 245, 245, 0.2)),url(../img/about/newyork.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  
 }
 
 header.masthead .intro-text {
   padding-top: 150px;
   padding-bottom: 100px;
+
 }
 
 header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
+  font-size: 122px;
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
@@ -221,6 +224,8 @@ header.masthead .intro-text .intro-heading {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
 }
+
+
 
 .service-heading {
   margin: 15px 0;
@@ -278,7 +283,7 @@ header.masthead .intro-text .intro-heading {
   margin: 0 auto;
   padding: 25px;
   text-align: center;
-  background-color: #fff;
+  background-color: lightgrey;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
